@@ -87,6 +87,7 @@ namespace CalculatorApp
 
             }
 
+            /// Multiplication and Division 
             else if (expression.Contains("*"))
             {
                 string[] parts = expression.Split('*');
