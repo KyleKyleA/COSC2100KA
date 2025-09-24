@@ -20,5 +20,16 @@ namespace TicTacToeUIGame
         {
             InitializeComponent();
         }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            // Close the application when the exit button is clicked 
+            Application.Current.Shutdown();
+        }
+
+        private void ResetBtn_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
