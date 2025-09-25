@@ -22,8 +22,8 @@
         <TextBox HorizontalAlignment="Left" Margin="92,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20"/>
         <TextBox HorizontalAlignment="Left" Margin="92,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="O Player" HorizontalAlignment="Left" Margin="33,46,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="ResetBtn" Content="_Reset" HorizontalAlignment="Left" Margin="650,301,0,0" VerticalAlignment="Top" Height="43" Width="124" Click="ResetBtn_Click"/>
-        <Button x:Name="ExitBtn" Content="_Exit" HorizontalAlignment="Left" Margin="650,357,0,0" VerticalAlignment="Top" Height="39" Width="124" Click="ExitBtn_Click"/>
+        <Button x:Name="ResetBtn" Content="_Reset" ToolTip="This Resets everything" HorizontalAlignment="Left" Margin="650,301,0,0" VerticalAlignment="Top" Height="43" Width="124" Click="ResetBtn_Click"/>
+        <Button x:Name="ExitBtn" Content="_Exit" ToolTip="This button is used for the exit out of the program" HorizontalAlignment="Left" Margin="650,357,0,0" VerticalAlignment="Top" Height="39" Width="124" Click="ExitBtn_Click"/>
         <Label x:Name="X" Content="X" HorizontalAlignment="Left" Margin="629,80,0,0" VerticalAlignment="Top"/>
         <Label Content="O" HorizontalAlignment="Left" Margin="701,80,0,0" VerticalAlignment="Top" Width="39"/>
         <TextBox x:Name="ScoreX" HorizontalAlignment="Left" Margin="651,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Height="23"/>
@@ -31,7 +31,7 @@
         <TextBox x:Name="ScoreO" HorizontalAlignment="Left" Margin="738,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Height="23"/>
         <Label Content="Current Player" HorizontalAlignment="Left" Margin="385,29,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="475,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
-        <Grid Margin="33,112,304,71">
+        <Grid Margin="33,110,304,73">
             <!-- Define 3 rows and 3 columns -->
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -44,47 +44,17 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <!-- Cell (0,0) - X -->
-            <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Background="LightGray"/>
+            <Button x:Name="Button0_0" Grid.Column="0" Grid.Row="0" Content="X"></Button>
+            <Button x:Name="Button1_0" Grid.Column="1" Grid.Row="0" Content="O"></Button>
+            <Button x:Name="Button2_0" Grid.Column="2" Grid.Row="0"></Button>
 
-            <!-- Cell (0,1) - Empty -->
-            <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Background="LightGray">
-                <TextBlock Text="" FontSize="48" FontWeight="Bold" 
-                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Border>
+            <Button x:Name="Button0_1" Grid.Column="0" Grid.Row="1"></Button>
+            <Button x:Name="Button1_1" Grid.Column="1" Grid.Row="1"></Button>
+            <Button x:Name="Button2_1" Grid.Column="2" Grid.Row="1"></Button>
 
-            <!-- Cell (0,2) - O -->
-            <Border Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Background="LightGray"/>
-
-            <!-- Cell (1,0) - Empty -->
-            <Border Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Background="LightGray">
-                <TextBlock Text="" FontSize="48" FontWeight="Bold" 
-                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Border>
-
-            <!-- Cell (1,1) - X -->
-            <Border Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Background="LightGray"/>
-
-            <!-- Cell (1,2) - Empty -->
-            <Border Grid.Row="1" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Background="LightGray">
-                <TextBlock Text="" FontSize="48" FontWeight="Bold" 
-                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Border>
-
-            <!-- Cell (2,0) - Empty -->
-            <Border Grid.Row="2" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Background="LightGray">
-                <TextBlock Text="" FontSize="48" FontWeight="Bold" 
-                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Border>
-
-            <!-- Cell (2,1) - O -->
-            <Border Grid.Row="2" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Background="LightGray"/>
-
-            <!-- Cell (2,2) - Empty -->
-            <Border Grid.Row="2" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Background="LightGray">
-                <TextBlock Text="" FontSize="48" FontWeight="Bold" 
-                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Border>
+            <Button x:Name="Button0_2" Grid.Column="0" Grid.Row="2"></Button> 
+            <Button x:Name="Button1_2" Grid.Column="1" Grid.Row="2"></Button>
+            <Button x:Name="Button2_2" Grid.Column="2" Grid.Row="2"></Button>
         </Grid>
     </Grid>
 </Window>

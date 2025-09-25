@@ -8,4 +8,11 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Calculator\**" />
+    <EmbeddedResource Remove="Calculator\**" />
+    <None Remove="Calculator\**" />
+    <Page Remove="Calculator\**" />
+  </ItemGroup>
+
 </Project>
